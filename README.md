@@ -1,5 +1,6 @@
 # W3schools-Website
 
+responsive for all device
 
 <hr />
 
