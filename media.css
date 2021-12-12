@@ -1,0 +1,94 @@
+@media screen and (max-width : 1024px){
+    header{
+        flex-direction: column;
+    }
+    header .right-box{
+        display: none;
+    }
+    header nav{
+        width: 100%;
+    }
+    main .section-right{
+        display: none
+    }
+    main .section-left{
+        width: 100%;
+    }
+    article{
+        grid-template-columns: 1fr;
+    }
+    .grid-squere{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-rect{
+        grid-template-columns: 1fr;
+    }
+    .editor img {
+        width: 600px;
+    }
+    .W3Spaces img{
+        display: none;
+    }
+    .Web-Templates img{
+        width: 600px;
+    }
+}
+@media screen and (max-width : 768px) {
+    .editor img {
+        width: 400px;
+    }
+    .Web-Templates img{
+        width: 400px;
+    }
+}
+@media screen and (max-width : 580px) {
+    header nav , header nav .menu{
+        flex-direction: column;
+        text-align: center;
+    }
+    header nav .menu , header nav .logo{
+        width: 100%;
+    }
+    header nav .menu li{
+        width: 100%;
+    }
+    header nav .menu li a{
+        padding: 20px;
+    }
+}
+@media screen and (max-width : 530px) {
+    main .section-left h1 , .editor h1{
+        font-size: 60px;
+    }
+    main .section-left p{
+        font-size: 16px;
+    }
+    .grid-squere{
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+    .squre{
+        width: 100%;
+    }
+    .rect{
+        width: 100%;
+    }
+    article .box , .rect{
+        width: 300px;
+    }
+    .editor img {
+        width: 300px;
+    }
+    .editor h1 , .W3Spaces h1 , .Color-Picker h1 , .Code-Game h1 , .Web-Templates h1{
+        font-size: 40px;
+    }
+    .editor p , .W3Spaces p ,  .Color-Picker p , .Code-Game p , .Web-Templates p{
+        font-size: 16px;
+    }
+    .Web-Templates img{
+        width: 300px;
+    }
+    .btn-Templates , .btn-shop{
+        width: 250px;
+    }
+}
