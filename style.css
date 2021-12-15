@@ -79,7 +79,7 @@ header nav .menu li a {
 }
 
 header nav .menu li:hover {
-    background-color: var(--theme-color-green);
+    border-bottom: 1px solid var(--theme-color-green);
 }
 
 header .right-box {
@@ -111,6 +111,21 @@ header .right-box {
 .tow {
     background-color: var(--theme-color-pink);
     color: var(--theme-color-dark);
+}
+
+.hamberger {
+    width: 40px;
+    height: 40px;
+    padding: 20px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+
+.hamberger i {
+    font-size: 25px;
 }
 
 /*----------- section one style --------------*/

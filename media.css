@@ -56,30 +56,46 @@
     .Web-Templates img {
         width: 400px;
     }
-}
-
-/*----------- Mobile -------------*/
-@media screen and (max-width : 580px) {
 
     header nav,
+    header nav {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    header nav .hide {
+        display: none;
+
+    }
+
+    .hamberger {
+        display: block;
+    }
+
+    .rotate {
+        transform: rotate(360deg);
+        transition: all 500ms ease;
+    }
+
     header nav .menu {
         flex-direction: column;
         text-align: center;
-    }
-
-    header nav .menu,
-    header nav .logo {
         width: 100%;
-    }
-
-    header nav .menu li {
-        width: 100%;
+        margin-top: 80px;
+        padding: 0 0 20px;
     }
 
     header nav .menu li a {
         padding: 20px;
     }
+
+    header nav .menu li {
+        width: 100%;
+        text-align: center;
+    }
 }
+
+/*----------- Mobile -------------*/
 
 @media screen and (max-width : 530px) {
 
