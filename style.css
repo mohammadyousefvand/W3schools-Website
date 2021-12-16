@@ -79,7 +79,7 @@ header nav .menu li a {
 }
 
 header nav .menu li:hover {
-    border-bottom: 1px solid var(--theme-color-green);
+    opacity: 0.8;
 }
 
 header .right-box {
@@ -114,12 +114,9 @@ header .right-box {
 }
 
 .hamberger {
-    width: 40px;
-    height: 40px;
-    padding: 20px;
-    background: none;
-    border: none;
-    outline: none;
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
     cursor: pointer;
     display: none;
 }
