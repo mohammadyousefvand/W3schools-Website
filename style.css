@@ -38,26 +38,17 @@ body {
 
 /*---------- header -------------*/
 header {
-    width: 100%;
+    min-height: 60px;
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
+    padding: 15px;
 }
 
 header nav {
     width: 50%;
-    height: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-header nav .logo {
-    width: 15%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 10px 0;
 }
 
 header nav .logo img {
@@ -65,31 +56,25 @@ header nav .logo img {
 }
 
 header nav .menu {
-    width: 85%;
-    height: 100%;
     display: flex;
-    flex-direction: row;
     align-items: center;
+    margin-left: 30px;
 }
 
 header nav .menu li a {
-    display: inline-block;
-    padding: 30px;
+    margin: 0 20px;
     color: var(--theme-color-dark);
+    transition: all .3s ease;
 }
 
-header nav .menu li:hover {
-    opacity: 0.8;
+header nav .menu li a:hover {
+    color: #04AA6D;
 }
 
 header .right-box {
     width: 50%;
-    height: 100%;
     display: flex;
-    align-items: center;
-    flex-direction: row;
     justify-content: end;
-    padding: 20px 0;
 }
 
 .btn-header {
@@ -114,15 +99,13 @@ header .right-box {
 }
 
 .hamberger {
-    width: 25px;
-    height: 25px;
-    margin-top: 20px;
     cursor: pointer;
     display: none;
 }
 
 .hamberger i {
     font-size: 25px;
+    color: #282a35;
 }
 
 /*----------- section one style --------------*/

@@ -1,9 +1,6 @@
 /*-------- Laptop ---------*/
 
 @media screen and (max-width : 1024px) {
-    header {
-        flex-direction: column;
-    }
 
     header .right-box {
         display: none;
@@ -57,15 +54,16 @@
         width: 400px;
     }
 
-    header nav,
-    header nav {
-        justify-content: space-between;
-        padding: 0 20px;
+    header {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1000;
     }
 
-    header nav .hide {
-        display: none;
-
+    header nav {
+        justify-content: space-between;
     }
 
     .hamberger {
@@ -81,11 +79,21 @@
         flex-direction: column;
         text-align: center;
         width: 100%;
-        margin-top: 80px;
-        padding: 0 0 20px;
+        margin: 0;
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        z-index: 100;
+        background-color: #fff;
+        transition: all .5s ease;
+    }
+
+    header nav .hide {
+        left: 0;
     }
 
     header nav .menu li a {
+        display: block;
         padding: 20px;
     }
 
