@@ -31,6 +31,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "SourceSansProSemibold";
     font-weight: bold;
@@ -491,6 +495,7 @@ footer {
     background-color: var(--theme-color-dark);
     text-align: center;
     padding: 70px 20px 100px;
+    position: relative;
 }
 
 footer p,
@@ -509,4 +514,20 @@ footer a:hover {
 
 .btn-shop {
     width: 500px;
+}
+
+footer .go-up {
+    width: 50px;
+    height: 50px;
+    background-color: var(--theme-color-green);
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 22px;
+    color: var(--card-color);
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: -8px 8px 15px rgba(0, 0, 0, .4);
 }
